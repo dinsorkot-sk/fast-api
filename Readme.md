@@ -12,12 +12,18 @@ git clone https://github.com/your-repo/fastapi-mysql-crud.git
 cd fastapi-mysql-crud
 ```
 
-### 2️⃣ **ติดตั้ง Dependencies**
+### 2️⃣ **สร้าง virtual environment**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3️⃣ **ติดตั้ง Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ **ตั้งค่าไฟล์ .env**
+### 4️⃣ **ตั้งค่าไฟล์ .env**
 สร้างไฟล์ `.env` และกำหนดค่าต่อไปนี้:
 ```env
 DB_HOST=localhost
@@ -25,10 +31,9 @@ DB_PORT=3306
 DB_USERNAME=root
 DB_PASSWORD=
 DB_NAME=fast_api
-DATABASE_URL=mysql+pymysql://root:@localhost:3306/fast_api
 ```
 
-### 4️⃣ **ตั้งค่า Database และ Alembic**
+### 5️⃣ **ตั้งค่า Database และ Alembic**
 ```bash
 alembic upgrade head  # รัน Migration เพื่อสร้างตารางในฐานข้อมูล
 ```
