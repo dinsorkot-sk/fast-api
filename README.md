@@ -8,7 +8,7 @@
 
 ### 1️⃣ **Clone โปรเจค**
 ```bash
-git clone https://github.com/your-repo/fastapi-mysql-crud.git
+git clone https://github.com/dinsorkot-sk/fast-api.git
 cd fastapi-mysql-crud
 ```
 
